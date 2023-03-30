@@ -18,7 +18,7 @@ create table pedidos (
 	id serial primary key not null,
 	valor_total integer,
 	observacao text,
-	cliente_id integer references clientes(id)
+	usuario_id integer references usuarios(id)
 );
 
 create table pedido_produtos (
